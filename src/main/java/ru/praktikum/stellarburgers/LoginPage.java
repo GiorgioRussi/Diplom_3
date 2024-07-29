@@ -34,8 +34,8 @@ public class LoginPage extends ConstantsData {
     }
 
     @Step("Кликаем по кнопке")
-    public void clickButtonToLogin(By buttonToLogin) {
-        driver.findElement(buttonToLogin).click();
+    public void clickButtonToLogin(By buttonTologin) {
+        driver.findElement(buttonTologin).click();
     }
 
     @Step("Проверка перехода на страницу логина")

@@ -16,7 +16,6 @@ public class ConstantsData {
     User user = new User(EMAIL, PASSWORD_MORE_THEN_6_SYMBOLS, NAME);
 
     static final By BUTTON_CONSTRUCTOR = By.xpath(".//p[text() = 'Конструктор']");
-    static final By BUTTON_ORDER_LIST = By.xpath(".//p[text() = 'Лента Заказов']");
     static final By BUTTON_LOGO = By.xpath(".//div[@class = 'AppHeader_header__logo__2D0X2']");
     static final By BUTTON_PERSONAL_ACCOUNT = By.xpath(".//p[text() = 'Личный Кабинет']");
     static final By BUTTON_TO_LOGIN_AT_MAIN_PAGE = By.xpath(".//button[text() = 'Войти в аккаунт']");
@@ -24,7 +23,7 @@ public class ConstantsData {
     static final By BUTTON_TO_LOGIN_AT_REGISTER_AND_FORGOT_PASSWORD_PAGES = By.xpath(".//a[text() = 'Войти']");
 
 
-    static final String URL_MAIN_PAGE = "https://stellarburgers.nomoreparties.site/";
+    static final String URL_MAIN_PAGE = "https://stellarburgers.nomoreparties.site";
     static final String URL_REGISTER_PAGE = "https://stellarburgers.nomoreparties.site/register";
     static final String URL_FORGOT_PASSWORD_PAGE = "https://stellarburgers.nomoreparties.site/forgot-password";
     static final String URL_LOGIN_PAGE = "https://stellarburgers.nomoreparties.site/login";

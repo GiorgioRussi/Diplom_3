@@ -12,7 +12,7 @@ public class MainPage extends ConstantsData {
 
 
     private WebDriver driver;
-    private final By buttonToMakeOrderOnHomePage = By.xpath(".//button[text()='Оформить заказ']");
+    private final By buttonToMakeOrderOnMainPage = By.xpath(".//button[text()='Оформить заказ']");
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -48,12 +48,12 @@ public class MainPage extends ConstantsData {
     }
 
     @Step("Ожидание кнопки 'Оформить заказ'")
-    public void explicitWaitToVisibleHeaderHomePage() {
+    public void explicitWaitToVisibleHeaderMainPage() {
         new WebDriverWait(driver, 3)
-                .until(ExpectedConditions.visibilityOf(driver.findElement(buttonToMakeOrderOnHomePage)));
+                .until(ExpectedConditions.visibilityOf(driver.findElement(buttonToMakeOrderOnMainPage)));
     }
     @Step("Проверка смены кнопки 'Войти в аккаунт' на кнопку 'Оформить заказ'")
-    public boolean isVisibleHeaderHomePage() {
-        return driver.findElement(buttonToMakeOrderOnHomePage).isDisplayed();
+    public boolean isVisibleHeaderMainPage() {
+        return driver.findElement(buttonToMakeOrderOnMainPage).isDisplayed();
     }
 }
