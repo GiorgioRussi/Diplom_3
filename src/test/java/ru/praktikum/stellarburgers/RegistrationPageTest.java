@@ -1,6 +1,5 @@
 package ru.praktikum.stellarburgers;
 
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
